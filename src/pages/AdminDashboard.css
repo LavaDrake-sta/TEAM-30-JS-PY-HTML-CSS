@@ -1,0 +1,130 @@
+.admin-dashboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  direction: rtl;
+  font-family: 'Heebo', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.admin-dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard-header h1 {
+  font-size: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard-header p {
+  color: #555;
+  font-size: 16px;
+}
+
+.admin-dashboard-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.admin-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px solid #e9ecef;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  border-color: #667eea;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+}
+
+.admin-icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.admin-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.admin-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* הודעת שגיאה */
+.admin-dashboard-error {
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px;
+  background: #ffe8e8;
+  border: 2px solid #f44336;
+  border-radius: 16px;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.admin-dashboard-error h2 {
+  color: #f44336;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard-error p {
+  color: #c62828;
+  font-size: 16px;
+}
+.stats-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 30px;
+  overflow-y: auto;
+  direction: rtl;
+}
+
+.stats-content h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.stat-section {
+  margin-bottom: 40px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
